@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/nice-rocks-landing-page/static/css/main.5f361e03.chunk.css",
+    "main.js": "/nice-rocks-landing-page/static/js/main.deaef5ca.chunk.js",
+    "main.js.map": "/nice-rocks-landing-page/static/js/main.deaef5ca.chunk.js.map",
+    "runtime-main.js": "/nice-rocks-landing-page/static/js/runtime-main.037ef0cb.js",
+    "runtime-main.js.map": "/nice-rocks-landing-page/static/js/runtime-main.037ef0cb.js.map",
+    "static/js/2.758cde11.chunk.js": "/nice-rocks-landing-page/static/js/2.758cde11.chunk.js",
+    "static/js/2.758cde11.chunk.js.map": "/nice-rocks-landing-page/static/js/2.758cde11.chunk.js.map",
+    "index.html": "/nice-rocks-landing-page/index.html",
+    "precache-manifest.734af409ca2c160587cf117da2f2e93e.js": "/nice-rocks-landing-page/precache-manifest.734af409ca2c160587cf117da2f2e93e.js",
+    "service-worker.js": "/nice-rocks-landing-page/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/nice-rocks-landing-page/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.758cde11.chunk.js.LICENSE.txt": "/nice-rocks-landing-page/static/js/2.758cde11.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/nice-rocks-landing-page/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.037ef0cb.js",
+    "static/js/2.758cde11.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.deaef5ca.chunk.js"
+  ]
+}
