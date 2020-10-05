@@ -5,13 +5,11 @@ const InfoSection = ({title, paragraphs, screenshot, graphic, horizontalFlip=fal
   const flipped = useResponsiveState() !== 'mobile' && horizontalFlip;
 
   return (
-    <>
-    
-    <div className='InfoSection'>
+    <section className='InfoSection'>
       <h1 className={'InfoSection-title'}>{title}</h1>
       <div className={'InfoSection-content'}>
         {!flipped && <img className={"InfoSection-mainImage"} src={screenshot} />}
-        <section className={flipped ? 'InfoSection-info InfoSection-flipped' : 'InfoSection-info'}>
+        <div className={flipped ? 'InfoSection-info InfoSection-flipped' : 'InfoSection-info'}>
           {paragraphs.map(paragraph => (
             <div key={paragraph.title}>
               <h2>{paragraph.title}</h2>
@@ -20,11 +18,10 @@ const InfoSection = ({title, paragraphs, screenshot, graphic, horizontalFlip=fal
           ))}
           <div className="InfoSection-spacer"></div>
           <img src={graphic} />
-        </section > 
+        </div > 
         {flipped && <img className={"InfoSection-mainImage"} src={screenshot} />}
       </div>
-    </div>
-    </>
+    </section>
   )
 }
 

@@ -4,6 +4,8 @@ import Banner from './components/Banner';
 import { ThemeProvider } from '@material-ui/core'
 import { createMuiTheme } from '@material-ui/core/styles';
 import InfoSection from './components/InfoSection';
+import CenteredInfo from './components/CenteredInfo';
+import Footer from './components/Footer';
 
 const theme = createMuiTheme({
   palette: {
@@ -22,6 +24,10 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App">
         <Banner />
+        <CenteredInfo 
+          title={"Nice... “Rocks”?"}
+          body={"This project was inspired by the bowerbird, which delicately assembles intricate nests filled with special flowers, shells, and rocks to share with that special somebird.\nIf you’re looking for a personal, friendly, “nest-to-nest” sharing system, we hope you find it here."}
+        />
         <InfoSection 
           title={"There, for you"}
           paragraphs={[
@@ -38,7 +44,7 @@ function App() {
               body: "Re-sharing a Rock that was sent to you is easy. Just tap the arrow icon and add a new note to your friend.",
             },
           ]}
-          screenshot={"https://placekitten.com/250/450"}
+          screenshot={"https://placekitten.com/251/450"}
           graphic={"./images/bird.svg"}
         />
         <InfoSection 
@@ -57,7 +63,7 @@ function App() {
               body: "Once you’re finished, send a response! Let your friend know if your thoughts, and the rock will move from your collection to your archive. Out of the way, but there if you want to revisit it.",
             },
           ]}
-          screenshot={"https://placekitten.com/250/450"}
+          screenshot={"https://placekitten.com/250/448"}
           graphic={"./images/rocks.svg"}
           horizontalFlip
         />
@@ -73,10 +79,11 @@ function App() {
               body: "Access your collection without an internet connection. You can even send rocks and responses, which will queue in the background and then send as soon as you reconnect.",
             },
           ]}
-          screenshot={"https://placekitten.com/250/450"}
+          screenshot={"https://placekitten.com/250/447"}
           graphic={"./images/leaves.svg"}
         />
       </div>
+      <Footer />
     </ThemeProvider>
   );
 }

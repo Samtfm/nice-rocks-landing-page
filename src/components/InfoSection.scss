@@ -3,13 +3,8 @@
 
 .InfoSection {
   max-width: $maxContentWidth;
-  margin: 0 auto;
-  margin-bottom: 60px;
-
-  .InfoSection-title {
-    font-size: 24px;
-    margin-bottom: 24px;
-  }
+  margin-left: auto;
+  margin-right: auto;
 
   .InfoSection-content {
     display: flex;
@@ -18,6 +13,7 @@
     .InfoSection-mainImage {
       align-self: flex-start;
       margin: 0 auto;
+      border-radius: 10px;
     }
     @media only screen and (max-width: 600px) {
       padding: 0;
@@ -35,13 +31,6 @@
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    h2 {
-      font-weight: bold;
-      margin-bottom: 6px;
-    }
-    p {
-      margin-bottom: 14px;
-    }
 
     .InfoSection-spacer {
       flex: 1;
