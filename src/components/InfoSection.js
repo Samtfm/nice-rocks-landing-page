@@ -10,7 +10,7 @@ const InfoSection = ({title, paragraphs, screenshot, graphic, horizontalFlip=fal
     <div className='InfoSection'>
       <h1 className={'InfoSection-title'}>{title}</h1>
       <div className={'InfoSection-content'}>
-        {!flipped && <img src={screenshot} />}
+        {!flipped && <img className={"InfoSection-mainImage"} src={screenshot} />}
         <section className={flipped ? 'InfoSection-info InfoSection-flipped' : 'InfoSection-info'}>
           {paragraphs.map(paragraph => (
             <div key={paragraph.title}>
@@ -21,7 +21,7 @@ const InfoSection = ({title, paragraphs, screenshot, graphic, horizontalFlip=fal
           <div className="InfoSection-spacer"></div>
           <img src={graphic} />
         </section > 
-        {flipped && <img src={screenshot} />}
+        {flipped && <img className={"InfoSection-mainImage"} src={screenshot} />}
       </div>
     </div>
     </>
