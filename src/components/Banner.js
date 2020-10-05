@@ -38,7 +38,7 @@ const Banner = () => {
         <section className='Banner-keyFeatures'>
           <ul >
             {bullets.map(bullet => (
-              <li>
+              <li key={bullet.text}>
                 <bullet.icon style={{color: '#c07e0e'}}/>
                 <span>{bullet.text}</span>
               </li>

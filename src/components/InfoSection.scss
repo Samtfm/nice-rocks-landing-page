@@ -1,0 +1,56 @@
+@import "src/colors";
+@import "src/layout";
+
+.InfoSection {
+  max-width: $maxContentWidth;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  .InfoSection-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .InfoSection-content {
+    display: flex;
+    // align-items: flex-start;
+    padding: 0 10px 0 10px;
+    @media only screen and (max-width: 600px) {
+      padding: 0;
+
+      flex-direction: column;
+      align-items: center;
+      img {
+        margin-bottom: 14px;
+      }
+    }
+  }
+  .InfoSection-info {
+    text-align: left;
+    padding: 10px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    h2 {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    p {
+      margin-bottom: 14px;
+    }
+
+    .InfoSection-spacer {
+      flex: 1;
+    }
+    img {
+      margin-top: 20px;
+      align-self: flex-end;
+    }
+
+    &.InfoSection-flipped {
+      img {
+        align-self: flex-start;
+      }
+    }
+  }
+}
