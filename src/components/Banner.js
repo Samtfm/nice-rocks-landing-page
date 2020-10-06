@@ -33,9 +33,9 @@ const Banner = () => {
 
     <section className='Banner'>
       <div>
-        <p className='Banner-tagline'>
+        <h1 className='Banner-tagline'>
           {tagline}
-        </p>
+        </h1>
         <div className='Banner-keyFeatures'>
           <ul >
             {bullets.map(bullet => (

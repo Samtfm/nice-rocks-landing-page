@@ -1,9 +1,7 @@
 import React from 'react';
 import './CenteredInfo.scss';
-import useResponsiveState from '../useResponsiveState';
 
 const CenteredInfo = ({title, body}) => {
-  const isMobile = useResponsiveState() === 'mobile'
   console.log(body.split('\n'))
   return (
     <section className='CenteredInfo'>
