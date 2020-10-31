@@ -44,7 +44,7 @@ function App() {
               body: "Re-sharing a Rock that was sent to you is easy. Just tap the arrow icon and add a new note to your friend.",
             },
           ]}
-          screenshot={"https://placekitten.com/251/450"}
+          screenshot={"./images/received-rocks.png"}
           graphic={"./images/bird.svg"}
         />
         <InfoSection 
@@ -63,7 +63,7 @@ function App() {
               body: "Once you’re finished, send a response! Let your friend know if your thoughts, and the rock will move from your collection to your archive. Out of the way, but there if you want to revisit it.",
             },
           ]}
-          screenshot={"https://placekitten.com/250/448"}
+          screenshot={"./images/send-response.png"}
           graphic={"./images/rocks.svg"}
           horizontalFlip
         />
@@ -79,7 +79,7 @@ function App() {
               body: "Access your collection without an internet connection. You can even send rocks and responses, which will queue in the background and then send as soon as you reconnect.",
             },
           ]}
-          screenshot={"https://placekitten.com/250/447"}
+          screenshot={"./images/new-rock.png"}
           graphic={"./images/leaves.svg"}
         />
       </div>

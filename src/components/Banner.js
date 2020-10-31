@@ -46,12 +46,13 @@ const Banner = () => {
             ))}
           </ul>
         </div>
-        <div className='Banner-buttons'>
+        <h2 className={'Banner-coming-soon'}>{"Coming soon to iOS and Android"}</h2>
+        {/* <div className='Banner-buttons'>
           <span>
             <Button variant="contained" color="secondary">iOS</Button>
             <Button variant="contained" color="secondary">Android</Button>
           </span>
-        </div>
+        </div> */}
       </div>
     </section>
     </>
