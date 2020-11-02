@@ -1,25 +1,23 @@
 import React from 'react';
 import './Banner.scss';
 import Button from '@material-ui/core/Button'
-import AccessTime from '@material-ui/icons/AccessTime';
+import WatchLaterIcon from '@material-ui/icons/WatchLater';
 import People from '@material-ui/icons/People';
-import Notifications from '@material-ui/icons/Notifications';
-
-
-const tagline = "Recommend your favorite things \n to your favorite people"
+import ChatIcon from '@material-ui/icons/Chat';
+const tagline = "Recommend your favorite\u00A0things to your favorite\u00A0people"
 
 const bullets = [
   {
     icon: People,
-    text: '1-to-1 sharing for personalized content'
+    text: 'Share personal recommendations one\u2011on\u2011one'
   },
   {
-    icon: AccessTime,
-    text: 'Easy to find things you saved for later'
+    icon: WatchLaterIcon,
+    text: 'Browse your collection in your leisure time'
   },
   {
-    icon: Notifications,
-    text: 'One more excellent feature'
+    icon: ChatIcon,
+    text: 'Use feedback on items you share to guide your next recommendation'
   },
 
 ]
@@ -40,7 +38,7 @@ const Banner = () => {
           <ul >
             {bullets.map(bullet => (
               <li key={bullet.text}>
-                <bullet.icon style={{color: '#c07e0e'}}/>
+                <bullet.icon style={{color: '#ffa21f'}}/>
                 <span>{bullet.text}</span>
               </li>
             ))}
@@ -49,8 +47,8 @@ const Banner = () => {
         <h2 className={'Banner-coming-soon'}>{"Coming soon to iOS and Android"}</h2>
         {/* <div className='Banner-buttons'>
           <span>
-            <Button variant="contained" color="secondary">iOS</Button>
-            <Button variant="contained" color="secondary">Android</Button>
+            <Button size="large" variant="contained" color="secondary">iOS</Button>
+            <Button size="large" variant="contained" color="secondary">Android</Button>
           </span>
         </div> */}
       </div>
