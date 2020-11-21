@@ -38,7 +38,7 @@ const Banner = () => {
           <ul >
             {bullets.map(bullet => (
               <li key={bullet.text}>
-                <bullet.icon style={{color: '#ffa21f'}}/>
+                <bullet.icon style={{color: '#ffc229'}}/>
                 <span>{bullet.text}</span>
               </li>
             ))}

@@ -14,17 +14,21 @@
   display: flex;
 
   .TopBar-brandName {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 26px;
+    font-weight: 600;
     color: white;  
     user-select: none;
+    text-shadow: -.5px 1.5px 1px rgba(0,0,0,.4);
   }
 }
 
 .Banner {
-  background-color: $fireLight;
+  background-color: $beige;
+  border-bottom: px solid $fire;
   padding: 40px 10px 60px 10px;
   margin-bottom: 40px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,.2);
 }
 
 .Banner-tagline {
@@ -66,7 +70,7 @@
 
 .Banner-coming-soon {
   background-color: $blue;
-  padding: 16px;
+  padding: 14px;
   font-size: 18px;
   border-radius: 5px;
   width: fit-content;
@@ -74,4 +78,6 @@
   font-weight: normal;
   font-weight: bold;
   color: white;
+  text-shadow: -.5px 1px 1px rgba(0,0,0,.4);
+  box-shadow: 0 0 5px 4px  $blue;
 }
