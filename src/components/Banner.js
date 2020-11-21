@@ -4,8 +4,7 @@ import Button from '@material-ui/core/Button'
 import WatchLaterIcon from '@material-ui/icons/WatchLater';
 import People from '@material-ui/icons/People';
 import ChatIcon from '@material-ui/icons/Chat';
-const tagline = "Recommend your favorite\u00A0things to your favorite\u00A0people"
-
+import FancyFavs from './FancyFavs';
 const bullets = [
   {
     icon: People,
@@ -32,7 +31,7 @@ const Banner = () => {
     <section className='Banner'>
       <div>
         <h1 className='Banner-tagline'>
-          {tagline}
+          {"Recommend your \u00A0"}<FancyFavs></FancyFavs>{" to your favorite\u00A0people"}
         </h1>
         <div className='Banner-keyFeatures'>
           <ul >
